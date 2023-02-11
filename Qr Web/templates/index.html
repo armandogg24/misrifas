@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            width: 100%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de QR</h1>
+    <form action="/generate_qr" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="ID">ID:</label>
+        <input type="text" id="ID" name="ID">
+        <br><br>
+        <label for="telf">Teléfono:</label>
+        <input type="text" id="telf" name="telf">
+        <br><br>
+        <input type="submit" value="Generar QR">
+    </form>
+</body>
+</html>
